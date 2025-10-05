@@ -2,42 +2,36 @@
 @tailwind components;
 @tailwind utilities;
 
-/* 🌌 خلفية الشرطة */
 body {
-  background: url("/background-police.png") center center / cover no-repeat fixed;
+  background: url('/background-police.png') no-repeat center center fixed;
+  background-size: cover;
   color: white;
   font-family: "Tajawal", sans-serif;
-  overflow-x: hidden;
+}
+
+table input {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none;
+  color: white;
+  width: 100%;
+  padding: 4px;
+  border-radius: 4px;
 }
 
 button {
-  @apply px-3 py-2 rounded-lg font-semibold transition-all duration-200;
+  background-color: #1e40af;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: 0.2s;
 }
 
 button:hover {
-  @apply shadow-glow;
+  background-color: #2563eb;
 }
 
-/* ✨ الانترو */
-.intro-screen {
-  position: fixed;
-  inset: 0;
-  background-color: rgba(0, 0, 0, 0.95);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 50;
-}
-
-.intro-screen img {
-  width: 120px;
-  height: auto;
-  filter: drop-shadow(0 0 15px rgba(59, 130, 246, 0.8));
-}
-
-.intro-text {
-  font-size: 1.5rem;
-  color: #fff;
-  margin-top: 10px;
-  text-shadow: 0 0 10px rgba(59, 130, 246, 0.8);
+pre {
+  font-family: "Courier New", monospace;
+  direction: rtl;
 }
