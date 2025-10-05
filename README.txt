@@ -20,3 +20,10 @@
 - الزر "استخراج ونسخ" ينسخ النموذج النهائي تلقائيًا.
 - الأقسام الفارغة لا تظهر في النتيجة.
 - متجاوب تمامًا مع الجوال والكمبيوتر.
+
+
+=== Fixes Applied (2025-10-06) ===
+- Renamed incorrectly suffixed files (.js.js, .json.json, .css.css, Intro.js.txt)
+- Added pages/_app.js to load Tailwind styles
+- Removed catch-all 'routes' from vercel.json (avoids Next.js asset MIME errors on Vercel)
+- Verified package.json and configs
