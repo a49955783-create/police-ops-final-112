@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 🌌 خلفية الشرطة */
+body {
+  background: url("/background-police.png") center center / cover no-repeat fixed;
+  color: white;
+  font-family: "Tajawal", sans-serif;
+  overflow-x: hidden;
+}
+
+button {
+  @apply px-3 py-2 rounded-lg font-semibold transition-all duration-200;
+}
+
+button:hover {
+  @apply shadow-glow;
+}
+
+/* ✨ الانترو */
+.intro-screen {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.95);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 50;
+}
+
+.intro-screen img {
+  width: 120px;
+  height: auto;
+  filter: drop-shadow(0 0 15px rgba(59, 130, 246, 0.8));
+}
+
+.intro-text {
+  font-size: 1.5rem;
+  color: #fff;
+  margin-top: 10px;
+  text-shadow: 0 0 10px rgba(59, 130, 246, 0.8);
+}
